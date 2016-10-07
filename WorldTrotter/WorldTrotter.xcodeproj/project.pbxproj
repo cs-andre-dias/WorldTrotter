@@ -12,6 +12,7 @@
 		73530CB81DA68E8E006CCB00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73530CB71DA68E8E006CCB00 /* Assets.xcassets */; };
 		73530CBB1DA68E8E006CCB00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73530CB91DA68E8E006CCB00 /* LaunchScreen.storyboard */; };
 		73530CC31DA6C80C006CCB00 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73530CC21DA6C80C006CCB00 /* ConversionViewController.swift */; };
+		73530CC61DA82CCE006CCB00 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73530CC51DA82CCE006CCB00 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		73530CBA1DA68E8E006CCB00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73530CBC1DA68E8E006CCB00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73530CC21DA6C80C006CCB00 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
+		73530CC51DA82CCE006CCB00 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73530CC61DA82CCE006CCB00 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				73530CAF1DA68E8E006CCB00 /* WorldTrotter */,
 				73530CAE1DA68E8E006CCB00 /* Products */,
+				73530CC41DA82CCE006CCB00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				73530CBC1DA68E8E006CCB00 /* Info.plist */,
 			);
 			path = WorldTrotter;
+			sourceTree = "<group>";
+		};
+		73530CC41DA82CCE006CCB00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73530CC51DA82CCE006CCB00 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

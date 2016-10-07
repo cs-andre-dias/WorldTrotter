@@ -45,9 +45,13 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="fahrenheitFieldEditChangedWithTextField:" destination="BYZ-38-t0r" eventType="editingChanged" id="8Uk-v5-j9n"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="jkO-u7-TJ4" firstAttribute="top" secondItem="T4Z-Sd-dWU" secondAttribute="bottom" constant="8" id="EFX-yp-m8m"/>
                             <constraint firstItem="6hw-dg-vzN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Jz3-m5-Gv0"/>
@@ -61,11 +65,23 @@
                             <constraint firstItem="eXi-z3-Thq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pUX-MG-KXa"/>
                             <constraint firstItem="eXi-z3-Thq" firstAttribute="top" secondItem="mqJ-Zj-fMf" secondAttribute="bottom" constant="8" id="vxn-xq-fey"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Djt-63-FLQ" appends="YES" id="X7Y-vV-IeF"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="celsiusLabel" destination="T4Z-Sd-dWU" id="bMt-39-19Q"/>
+                        <outlet property="textField" destination="6hw-dg-vzN" id="Nt7-lO-Guf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Djt-63-FLQ">
+                    <connections>
+                        <action selector="dismissKeyboardWithSender:" destination="BYZ-38-t0r" id="USJ-Oj-EZN"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-65" y="90"/>
+            <point key="canvasLocation" x="-246" y="44"/>
         </scene>
     </scenes>
 </document>

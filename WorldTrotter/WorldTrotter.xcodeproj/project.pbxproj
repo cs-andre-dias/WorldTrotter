@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7335012B1DB13CD0003BBEF7 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7335012A1DB13CD0003BBEF7 /* WebViewController.swift */; };
 		73530CB11DA68E8E006CCB00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73530CB01DA68E8E006CCB00 /* AppDelegate.swift */; };
 		73530CB61DA68E8E006CCB00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73530CB41DA68E8E006CCB00 /* Main.storyboard */; };
 		73530CB81DA68E8E006CCB00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73530CB71DA68E8E006CCB00 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7335012A1DB13CD0003BBEF7 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		73530CAD1DA68E8E006CCB00 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73530CB01DA68E8E006CCB00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73530CB51DA68E8E006CCB00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				73530CB01DA68E8E006CCB00 /* AppDelegate.swift */,
 				73530CC21DA6C80C006CCB00 /* ConversionViewController.swift */,
+				7335012A1DB13CD0003BBEF7 /* WebViewController.swift */,
 				73530CC71DA85B45006CCB00 /* MapViewController.swift */,
 				73530CB41DA68E8E006CCB00 /* Main.storyboard */,
 				73530CB71DA68E8E006CCB00 /* Assets.xcassets */,
@@ -155,6 +158,7 @@
 				73530CC31DA6C80C006CCB00 /* ConversionViewController.swift in Sources */,
 				73530CC81DA85B45006CCB00 /* MapViewController.swift in Sources */,
 				73530CB11DA68E8E006CCB00 /* AppDelegate.swift in Sources */,
+				7335012B1DB13CD0003BBEF7 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +322,7 @@
 				73530CC11DA68E8E006CCB00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

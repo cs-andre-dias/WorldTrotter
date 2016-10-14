@@ -45,10 +45,10 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     @IBAction func fahrenheitFieldEditChanged(textField: UITextField){
     
         if let text = textField.text {
-            if let value = Double(text) {
-                fahrenheitValue = value
+            if let value = numberFormatter().number(from: text) {
+                fahrenheitValue = value.doubleValue
             }else{
-                celsiusLabel.text = "???"
+                fahrenheitValue = nil
             }
         }
     }
@@ -58,8 +58,13 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let existingTextHasDecimalSeparator = textField.text?.range(of: ".")
-        let replacementTextHasDecimalSeparator = string.range(of: ".")
+        
+        let currentLocale = Locale.current
+        let decimalSeparator = currentLocale.decimalSeparator!
+        
+        let existingTextHasDecimalSeparator = textField.text?.range(of: decimalSeparator)
+        let replacementTextHasDecimalSeparator = string.range(of: decimalSeparator)
+        
         let letter = NSCharacterSet.letters
         let withoutText = textField.text?.rangeOfCharacter(from: letter)
         
